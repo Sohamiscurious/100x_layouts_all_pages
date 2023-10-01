@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>100x</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+</head>
+
+<body class="bg-neutral-1000 h-screen">
+    <header class="px-[15px] py-4 w-full flex items-center gap-5 fixed bg-neutral-1000">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>   
+        <p class="text-15 font-bold leading-normal text-neutral-50">Step 3 of 4</p>
+    </header>
+    <main class="flex flex-col justify-between h-screen w-full">
+        <section class="px-[15px] pt-16 w-full flex flex-col gap-10">
+            <section class="flex flex-col">
+                <h1 class="text-24 text-neutral-50 font-bold leading-normal">We sent you a code</h1>
+                <p class="text-14 font-regular text-neutral-500 leading-normal">Enter it below to verify janedoe@gmail.com</p>
+            </section>
+            <section class="flex flex-col gap-3 items-end">
+                <fieldset class="w-full px-3 pt-2 pb-4 border border-neutral-500 rounded focus-within:border-twitter-blue group">
+                    <legend class="text-neutral-500 text-12 font-medium group-focus-within:text-twitter-blue">
+                        <div class="px-1">
+                            Verification code
+                        </div>
+                    </legend>
+                    <input type="text" placeholder="Verification code" class="w-full bg-transparent focus:outline-none text-neutral-50 placeholder:text-neutral-500">
+                </fieldset>
+                <span class="text-twitter-blue text-14 font-regular leading-normal">Didn't receive a code?</span>
+            </section>
+        </section>
+        <section class="px-[15px] py-5 bg-neutral-1000">
+            <a href="create-account-step-4.html">
+                <button
+                    class="bg-neutral-50 hover:bg-neutral-200 disabled:opacity-25 disabled:pointer-events-none px-6 py-2 w-full rounded-full shadow-button backdrop-blur-xl text-16 text-neutral-1000 leading-normal font-bold">
+                    Next
+                </button>
+            </a>
+        </section>
+    </main>
+</body>
+
+</html>

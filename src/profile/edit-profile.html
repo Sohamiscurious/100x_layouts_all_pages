@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>100x</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+</head>
+
+<body class="bg-neutral-1000 h-screen">
+    <header class="px-[15px] py-4 w-full justify-between flex items-center gap-5 sticky top-0 bg-neutral-1000">
+        <div class="flex gap-5">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M12 19.5L5 12.5L12 5.5" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 12.5H5" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <p class="text-16 font-bold leading-normal text-neutral-50">Edit profile</p>
+        </div>
+        <button
+            class="bg-neutral-50 hover:bg-neutral-200 disabled:opacity-25 disabled:pointer-events-none px-6 py-2 rounded-full shadow-button backdrop-blur-xl text-16 text-neutral-1000 leading-normal font-bold">
+            Save
+        </button>
+    </header>
+    <main class="flex flex-col justify-between w-full px-4 py-3">
+    
+        <div class="w-full h-52 relative">
+            <img src="../images/header-image.png" alt="" class="mb-10 w-full h-52 object-cover">
+            <div class="flex gap-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div class="p-1 rounded-full bg-neutral-1000 opacity-60">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M3 21C2.45 21 1.979 20.804 1.587 20.412C1.195 20.02 0.999335 19.5493 1 19V7C1 6.45 1.196 5.979 1.588 5.587C1.98 5.195 2.45067 4.99933 3 5H6.15L8 3H14V5H8.875L7.05 7H3V19H19V10H21V19C21 19.55 20.804 20.021 20.412 20.413C20.02 20.805 19.5493 21.0007 19 21H3ZM19 7V5H17V3H19V1H21V3H23V5H21V7H19ZM11 17.5C12.25 17.5 13.3127 17.0623 14.188 16.187C15.0633 15.3117 15.5007 14.2493 15.5 13C15.5 11.75 15.0623 10.6873 14.187 9.812C13.3117 8.93667 12.2493 8.49933 11 8.5C9.75 8.5 8.68734 8.93767 7.812 9.813C6.93667 10.6883 6.49934 11.7507 6.5 13C6.5 14.25 6.93767 15.3127 7.813 16.188C8.68834 17.0633 9.75067 17.5007 11 17.5ZM11 15.5C10.3 15.5 9.70834 15.2583 9.225 14.775C8.74167 14.2917 8.5 13.7 8.5 13C8.5 12.3 8.74167 11.7083 9.225 11.225C9.70834 10.7417 10.3 10.5 11 10.5C11.7 10.5 12.2917 10.7417 12.775 11.225C13.2583 11.7083 13.5 12.3 13.5 13C13.5 13.7 13.2583 14.2917 12.775 14.775C12.2917 15.2583 11.7 15.5 11 15.5Z" fill="#F9F9F9"/>
+                    </svg>
+                </div>
+                <div class="p-1 rounded-full bg-neutral-1000 opacity-60">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <img src="../images/header-avatar.png" class="rounded-full w-20 h-20 ml-2.5 border-4 border-neutral-1000 absolute top-[144px]">
+        </div>
+
+        <div class="mt-6 flex flex-col gap-5">
+            <fieldset class="px-3 pt-2 pb-4 border border-neutral-500 rounded focus-within:border-twitter-blue group">
+                <legend class="text-neutral-500 text-12 font-medium group-focus-within:text-twitter-blue">
+                    <div class="px-1">
+                        Name
+                    </div>
+                </legend>
+                <input type="text" placeholder="Enter name" value="aarushe reddy" class="w-full bg-transparent focus:outline-none text-neutral-50 placeholder:text-neutral-500">
+            </fieldset>
+            <fieldset class="px-3 pt-2 pb-4 border border-neutral-500 rounded focus-within:border-twitter-blue group">
+                <legend class="text-neutral-500 text-12 font-medium group-focus-within:text-twitter-blue">
+                    <div class="px-1">
+                        Name
+                    </div>
+                </legend>
+                <textarea name="" id="" cols="30" rows="3" placeholder="Enter bio" class="text-15 w-full bg-transparent resize-none focus:outline-none text-neutral-50 placeholder:text-neutral-500">Digital Goodies Team - Web & Mobile UI/UX development; Graphics; Illustrations</textarea>
+            </fieldset>
+            <fieldset class="px-3 pt-2 pb-4 border border-neutral-500 rounded focus-within:border-twitter-blue group">
+                <legend class="text-neutral-500 text-12 font-medium group-focus-within:text-twitter-blue">
+                    <div class="px-1">
+                        Location
+                    </div>
+                </legend>
+                <input type="text" placeholder="Location" value="" class="text-15 w-full bg-transparent focus:outline-none text-neutral-50 placeholder:text-neutral-500">
+            </fieldset>
+            <fieldset class="px-3 pt-2 pb-4 border border-neutral-500 rounded focus-within:border-twitter-blue group">
+                <legend class="text-neutral-500 text-12 font-medium group-focus-within:text-twitter-blue">
+                    <div class="px-1">
+                        Website
+                    </div>
+                </legend>
+                <input type="text" placeholder="Website" value="" class="text-15 w-full bg-transparent focus:outline-none text-neutral-50 placeholder:text-neutral-500">
+            </fieldset>
+        </div>
+    </main>
+</body>
+
+</html>

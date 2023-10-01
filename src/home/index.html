@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>100x</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+</head>
+
+<body class="bg-neutral-1000">
+    <header class="w-full flex flex-col items-center sticky top-0 bg-neutral-1000">
+        <section class="px-4 py-5 w-full flex items-center border-b border-neutral-700">
+            <img src="../images/header-avatar.png" alt="User Profile Picture" class="fixed w-9 rounded-full">
+            <div class="flex items-end justify-center w-full">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="19" viewBox="0 0 42 19" fill="none">
+                    <path
+                        d="M7.73038 0.238636V17.6932H4.56845V3.31534H4.46618L0.383789 5.9233V3.02557L4.72186 0.238636H7.73038Z"
+                        fill="#F9F9F9" />
+                    <path
+                        d="M18.6139 18.0256C17.2105 18.0256 16.0059 17.6705 15.0003 16.9602C14.0003 16.2443 13.2304 15.2131 12.6906 13.8665C12.1565 12.5142 11.8895 10.8864 11.8895 8.98295C11.8952 7.07955 12.165 5.46023 12.6991 4.125C13.2389 2.78409 14.0088 1.76136 15.0088 1.05682C16.0145 0.352273 17.2162 0 18.6139 0C20.0116 0 21.2133 0.352273 22.219 1.05682C23.2247 1.76136 23.9946 2.78409 24.5287 4.125C25.0684 5.46591 25.3383 7.08523 25.3383 8.98295C25.3383 10.892 25.0684 12.5227 24.5287 13.875C23.9946 15.2216 23.2247 16.25 22.219 16.9602C21.219 17.6705 20.0173 18.0256 18.6139 18.0256ZM18.6139 15.358C19.7048 15.358 20.5656 14.821 21.1963 13.7472C21.8327 12.6676 22.1508 11.0795 22.1508 8.98295C22.1508 7.59659 22.0059 6.43182 21.7162 5.48864C21.4264 4.54545 21.0173 3.83523 20.4889 3.35796C19.9605 2.875 19.3355 2.63352 18.6139 2.63352C17.5287 2.63352 16.6707 3.1733 16.04 4.25284C15.4094 5.3267 15.0912 6.90341 15.0855 8.98295C15.0798 10.375 15.219 11.5455 15.5031 12.4943C15.7929 13.4432 16.202 14.1591 16.7304 14.642C17.2588 15.1193 17.8866 15.358 18.6139 15.358Z"
+                        fill="#F9F9F9" />
+                    <path
+                        d="M34.6217 18.0256C33.2183 18.0256 32.0138 17.6705 31.0081 16.9602C30.0081 16.2443 29.2382 15.2131 28.6984 13.8665C28.1643 12.5142 27.8973 10.8864 27.8973 8.98295C27.903 7.07955 28.1729 5.46023 28.7069 4.125C29.2467 2.78409 30.0166 1.76136 31.0166 1.05682C32.0223 0.352273 33.224 0 34.6217 0C36.0194 0 37.2211 0.352273 38.2268 1.05682C39.2325 1.76136 40.0024 2.78409 40.5365 4.125C41.0763 5.46591 41.3461 7.08523 41.3461 8.98295C41.3461 10.892 41.0763 12.5227 40.5365 13.875C40.0024 15.2216 39.2325 16.25 38.2268 16.9602C37.2268 17.6705 36.0251 18.0256 34.6217 18.0256ZM34.6217 15.358C35.7126 15.358 36.5734 14.821 37.2041 13.7472C37.8405 12.6676 38.1586 11.0795 38.1586 8.98295C38.1586 7.59659 38.0138 6.43182 37.724 5.48864C37.4342 4.54545 37.0251 3.83523 36.4967 3.35796C35.9683 2.875 35.3433 2.63352 34.6217 2.63352C33.5365 2.63352 32.6785 3.1733 32.0479 4.25284C31.4172 5.3267 31.099 6.90341 31.0933 8.98295C31.0876 10.375 31.2268 11.5455 31.5109 12.4943C31.8007 13.4432 32.2098 14.1591 32.7382 14.642C33.2666 15.1193 33.8944 15.358 34.6217 15.358Z"
+                        fill="#F9F9F9" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" viewBox="0 0 13 15" fill="none">
+                    <path
+                        d="M2.10187 0.93457L5.47687 6.51696L8.85187 0.93457H10.6161L6.40585 7.48003L10.6161 14.0255H8.85187L5.47687 8.62207L2.10187 14.0255H0.346191L4.50528 7.48003L0.346191 0.93457H2.10187Z"
+                        fill="#F9F9F9" />
+                    <path
+                        d="M4.10187 0.93457L7.47687 6.51696L10.8519 0.93457H12.6161L8.40585 7.48003L12.6161 14.0255H10.8519L7.47687 8.62207L4.10187 14.0255H2.34619L6.50528 7.48003L2.34619 0.93457H4.10187Z"
+                        fill="#F9F9F9" />
+                </svg>
+            </div>
+        </section>
+
+        <section class="w-full">
+            <div class="flex w-full border-b border-neutral-700">
+                <div
+                    class="flex flex-col items-center justify-center hover:bg-neutral-800 w-full text-center cursor-pointer relative">
+                    <div class="flex items-end py-4 text-neutral-50 font-medium text-16">
+                        For you
+                    </div>
+                    <div class="bg-twitter-blue w-14 rounded-full h-1 absolute bottom-0"></div>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center hover:bg-neutral-800 w-full text-center cursor-pointer relative">
+                    <div class="flex items-end py-4 text-neutral-400 font-medium text-16">
+                        Following
+                    </div>
+                    <div class="w-20 rounded-full h-1 absolute bottom-0"></div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="flex flex-col w-full pb-20">
+        <div class="box-border px-4 py-2 h-min flex border-b border-neutral-700">
+            <div class="min-w-fit h-12 overflow-hidden mr-4 rounded-full">
+                <img src="../images/user-pic-1.png" alt="User Picture" class="w-12 h-12 object-cover">
+            </div>
+            <div class="w-full">
+                    <div class="mb-1">
+                        <div class="text-neutral-50 mb-1">
+                            <span class="text-16 font-medium">Name</span>
+                            <span class="text-neutral-500">@johndoe</span>
+                            <span class="text-neutral-500">•</span>
+                            <span class="text-neutral-500">10h</span>
+                        </div>
+                        <p class="text-neutral-50 text-15 font-regular">Don't wish for it, work for it.
+                        </p>
+                    </div>
+
+                    <div class="text-neutral-500 flex items-center justify-between py-3">
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path d="M12.1092 9.61961L8.03202 13.1428V11.339V10.589H7.28202H5.56048C2.90372 10.589 0.75 8.43526 0.75 5.7785C0.75 3.12174 2.90373 0.968018 5.56048 0.968018H8.88896C11.609 0.968018 13.814 3.17305 13.814 5.89311C13.814 7.32395 13.1918 8.68407 12.1092 9.61961Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5"/>
+                            </svg>
+                            <span class="text-14 font-regular">11</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <path d="M3.15304 1.46069L0.996155 3.6176M3.15304 1.46069L5.30994 3.6176M3.15304 1.46069L3.15304 10.6959C3.15304 12.2663 4.42611 13.5394 5.99652 13.5394L10.9179 13.5394" stroke="white" stroke-opacity="0.4" stroke-width="1.42174" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.6828 13.5396L18.8397 11.3826M16.6828 13.5396L14.5259 11.3826M16.6828 13.5396L16.6828 4.30436C16.6828 2.73395 15.4097 1.46088 13.8393 1.46088L8.91792 1.46088" stroke="white" stroke-opacity="0.4" stroke-width="1.42174" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-14 font-regular">270</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path d="M8.55375 3.86099L7.92905 3.08432C6.20461 0.940397 3.0458 1.29366 1.75996 3.77424C1.13951 4.97117 1.10862 7.40028 1.67758 8.62702C3.59347 12.7578 7.18184 14.7113 7.86976 15.0559C7.94687 15.0945 8.01695 15.1432 8.0896 15.1897C8.41151 15.3957 8.8226 15.3698 9.1221 15.112C9.17845 15.0635 13.3047 13.2092 15.4299 8.62702C15.9989 7.40029 15.968 4.97117 15.3475 3.77424C14.0617 1.29366 10.3743 0.69782 8.55375 3.86099Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5"/>
+                            </svg>
+                            <span class="text-14 font-regular">1,869</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.267883" y="5.71436" width="1.71429" height="9.14287" fill="white" fill-opacity="0.4"/>
+                                <rect x="3.69659" width="1.71429" height="14.8572" fill="white" fill-opacity="0.4"/>
+                                <rect x="7.12512" y="8" width="1.71429" height="6.85715" fill="white" fill-opacity="0.4"/>
+                                <rect x="10.5537" y="3.42847" width="1.71429" height="11.4286" fill="white" fill-opacity="0.4"/>
+                            </svg>
+                            <span class="text-14 font-regular">99.6k</span>
+                        </div>
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path d="M13.45 17C12.7416 17 12.1396 16.7521 11.6437 16.2563C11.1479 15.7604 10.9 15.1583 10.9 14.45C10.9 14.3508 10.9071 14.248 10.9212 14.1414C10.9354 14.0349 10.9566 13.9394 10.985 13.855L4.99248 10.37C4.75165 10.5825 4.48248 10.7491 4.18498 10.8698C3.88748 10.9905 3.57582 11.0506 3.24998 11.05C2.54165 11.05 1.93957 10.8021 1.44373 10.3063C0.947898 9.81042 0.699982 9.20833 0.699982 8.5C0.699982 7.79167 0.947898 7.18958 1.44373 6.69375C1.93957 6.19792 2.54165 5.95 3.24998 5.95C3.57582 5.95 3.88748 6.01035 4.18498 6.13105C4.48248 6.25175 4.75165 6.41807 4.99248 6.63L10.985 3.145C10.9566 3.06 10.9354 2.96452 10.9212 2.85855C10.9071 2.75258 10.9 2.64973 10.9 2.55C10.9 1.84167 11.1479 1.23958 11.6437 0.74375C12.1396 0.247917 12.7416 0 13.45 0C14.1583 0 14.7604 0.247917 15.2562 0.74375C15.7521 1.23958 16 1.84167 16 2.55C16 3.25833 15.7521 3.86042 15.2562 4.35625C14.7604 4.85208 14.1583 5.1 13.45 5.1C13.1241 5.1 12.8125 5.03993 12.515 4.9198C12.2175 4.79967 11.9483 4.63307 11.7075 4.42L5.71498 7.905C5.74331 7.99 5.76457 8.08577 5.77873 8.1923C5.7929 8.29883 5.79998 8.4014 5.79998 8.5C5.79998 8.59917 5.7929 8.70202 5.77873 8.80855C5.76457 8.91508 5.74331 9.01057 5.71498 9.095L11.7075 12.58C11.9483 12.3675 12.2175 12.2012 12.515 12.081C12.8125 11.9609 13.1241 11.9006 13.45 11.9C14.1583 11.9 14.7604 12.1479 15.2562 12.6438C15.7521 13.1396 16 13.7417 16 14.45C16 15.1583 15.7521 15.7604 15.2562 16.2563C14.7604 16.7521 14.1583 17 13.45 17ZM13.45 3.4C13.6908 3.4 13.8928 3.3184 14.056 3.1552C14.2192 2.992 14.3005 2.79027 14.3 2.55C14.3 2.30917 14.2184 2.10715 14.0552 1.94395C13.892 1.78075 13.6902 1.69943 13.45 1.7C13.2091 1.7 13.0071 1.7816 12.8439 1.9448C12.6807 2.108 12.5994 2.30973 12.6 2.55C12.6 2.79083 12.6816 2.99285 12.8448 3.15605C13.008 3.31925 13.2097 3.40057 13.45 3.4ZM3.24998 9.35C3.49082 9.35 3.69283 9.2684 3.85603 9.1052C4.01923 8.942 4.10055 8.74027 4.09998 8.5C4.09998 8.25917 4.01838 8.05715 3.85518 7.89395C3.69198 7.73075 3.49025 7.64943 3.24998 7.65C3.00915 7.65 2.80713 7.7316 2.64393 7.8948C2.48073 8.058 2.39942 8.25973 2.39998 8.5C2.39998 8.74083 2.48158 8.94285 2.64478 9.10605C2.80798 9.26925 3.00972 9.35057 3.24998 9.35ZM13.45 15.3C13.6908 15.3 13.8928 15.2184 14.056 15.0552C14.2192 14.892 14.3005 14.6903 14.3 14.45C14.3 14.2092 14.2184 14.0072 14.0552 13.844C13.892 13.6808 13.6902 13.5994 13.45 13.6C13.2091 13.6 13.0071 13.6816 12.8439 13.8448C12.6807 14.008 12.5994 14.2097 12.6 14.45C12.6 14.6908 12.6816 14.8928 12.8448 15.0561C13.008 15.2192 13.2097 15.3006 13.45 15.3Z" fill="white" fill-opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="box-border px-4 py-2 h-min flex border-b border-neutral-700">
+            <div class="min-w-fit h-12 overflow-hidden mr-4 rounded-full">
+                <img src="../images/user-pic-2.png" alt="User Picture" class="w-12 h-12 object-cover">
+            </div>
+            <div class="w-full">
+                    <div class="mb-1">
+                        <div class="text-neutral-50 mb-1">
+                            <span class="text-16 font-medium">John Doe</span>
+                            <span class="text-neutral-500">@johndoe</span>
+                            <span class="text-neutral-500">•</span>
+                            <span class="text-neutral-500">10h</span>
+                        </div>
+                        <p class="text-neutral-50 text-15 font-regular leading-normal">Writing gets easier after the first
+                            sentence.<br><br>Lifting gets easier after the first set.<br><br>People think and think and
+                            think until they finally decide to act. Their attention shifts from internal to external,
+                            and
+                            the difficulty they created in their mind vanishes.
+                        </p>
+                    </div>
+
+                    <div class="text-neutral-500 flex items-center justify-between py-3">
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path d="M12.1092 9.61961L8.03202 13.1428V11.339V10.589H7.28202H5.56048C2.90372 10.589 0.75 8.43526 0.75 5.7785C0.75 3.12174 2.90373 0.968018 5.56048 0.968018H8.88896C11.609 0.968018 13.814 3.17305 13.814 5.89311C13.814 7.32395 13.1918 8.68407 12.1092 9.61961Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5"/>
+                            </svg>
+                            <span class="text-14 font-regular">11</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <path d="M3.15304 1.46069L0.996155 3.6176M3.15304 1.46069L5.30994 3.6176M3.15304 1.46069L3.15304 10.6959C3.15304 12.2663 4.42611 13.5394 5.99652 13.5394L10.9179 13.5394" stroke="white" stroke-opacity="0.4" stroke-width="1.42174" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.6828 13.5396L18.8397 11.3826M16.6828 13.5396L14.5259 11.3826M16.6828 13.5396L16.6828 4.30436C16.6828 2.73395 15.4097 1.46088 13.8393 1.46088L8.91792 1.46088" stroke="white" stroke-opacity="0.4" stroke-width="1.42174" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-14 font-regular">270</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path d="M8.55375 3.86099L7.92905 3.08432C6.20461 0.940397 3.0458 1.29366 1.75996 3.77424C1.13951 4.97117 1.10862 7.40028 1.67758 8.62702C3.59347 12.7578 7.18184 14.7113 7.86976 15.0559C7.94687 15.0945 8.01695 15.1432 8.0896 15.1897C8.41151 15.3957 8.8226 15.3698 9.1221 15.112C9.17845 15.0635 13.3047 13.2092 15.4299 8.62702C15.9989 7.40029 15.968 4.97117 15.3475 3.77424C14.0617 1.29366 10.3743 0.69782 8.55375 3.86099Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5"/>
+                            </svg>
+                            <span class="text-14 font-regular">1,869</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.267883" y="5.71436" width="1.71429" height="9.14287" fill="white" fill-opacity="0.4"/>
+                                <rect x="3.69659" width="1.71429" height="14.8572" fill="white" fill-opacity="0.4"/>
+                                <rect x="7.12512" y="8" width="1.71429" height="6.85715" fill="white" fill-opacity="0.4"/>
+                                <rect x="10.5537" y="3.42847" width="1.71429" height="11.4286" fill="white" fill-opacity="0.4"/>
+                            </svg>
+                            <span class="text-14 font-regular">99.6k</span>
+                        </div>
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path d="M13.45 17C12.7416 17 12.1396 16.7521 11.6437 16.2563C11.1479 15.7604 10.9 15.1583 10.9 14.45C10.9 14.3508 10.9071 14.248 10.9212 14.1414C10.9354 14.0349 10.9566 13.9394 10.985 13.855L4.99248 10.37C4.75165 10.5825 4.48248 10.7491 4.18498 10.8698C3.88748 10.9905 3.57582 11.0506 3.24998 11.05C2.54165 11.05 1.93957 10.8021 1.44373 10.3063C0.947898 9.81042 0.699982 9.20833 0.699982 8.5C0.699982 7.79167 0.947898 7.18958 1.44373 6.69375C1.93957 6.19792 2.54165 5.95 3.24998 5.95C3.57582 5.95 3.88748 6.01035 4.18498 6.13105C4.48248 6.25175 4.75165 6.41807 4.99248 6.63L10.985 3.145C10.9566 3.06 10.9354 2.96452 10.9212 2.85855C10.9071 2.75258 10.9 2.64973 10.9 2.55C10.9 1.84167 11.1479 1.23958 11.6437 0.74375C12.1396 0.247917 12.7416 0 13.45 0C14.1583 0 14.7604 0.247917 15.2562 0.74375C15.7521 1.23958 16 1.84167 16 2.55C16 3.25833 15.7521 3.86042 15.2562 4.35625C14.7604 4.85208 14.1583 5.1 13.45 5.1C13.1241 5.1 12.8125 5.03993 12.515 4.9198C12.2175 4.79967 11.9483 4.63307 11.7075 4.42L5.71498 7.905C5.74331 7.99 5.76457 8.08577 5.77873 8.1923C5.7929 8.29883 5.79998 8.4014 5.79998 8.5C5.79998 8.59917 5.7929 8.70202 5.77873 8.80855C5.76457 8.91508 5.74331 9.01057 5.71498 9.095L11.7075 12.58C11.9483 12.3675 12.2175 12.2012 12.515 12.081C12.8125 11.9609 13.1241 11.9006 13.45 11.9C14.1583 11.9 14.7604 12.1479 15.2562 12.6438C15.7521 13.1396 16 13.7417 16 14.45C16 15.1583 15.7521 15.7604 15.2562 16.2563C14.7604 16.7521 14.1583 17 13.45 17ZM13.45 3.4C13.6908 3.4 13.8928 3.3184 14.056 3.1552C14.2192 2.992 14.3005 2.79027 14.3 2.55C14.3 2.30917 14.2184 2.10715 14.0552 1.94395C13.892 1.78075 13.6902 1.69943 13.45 1.7C13.2091 1.7 13.0071 1.7816 12.8439 1.9448C12.6807 2.108 12.5994 2.30973 12.6 2.55C12.6 2.79083 12.6816 2.99285 12.8448 3.15605C13.008 3.31925 13.2097 3.40057 13.45 3.4ZM3.24998 9.35C3.49082 9.35 3.69283 9.2684 3.85603 9.1052C4.01923 8.942 4.10055 8.74027 4.09998 8.5C4.09998 8.25917 4.01838 8.05715 3.85518 7.89395C3.69198 7.73075 3.49025 7.64943 3.24998 7.65C3.00915 7.65 2.80713 7.7316 2.64393 7.8948C2.48073 8.058 2.39942 8.25973 2.39998 8.5C2.39998 8.74083 2.48158 8.94285 2.64478 9.10605C2.80798 9.26925 3.00972 9.35057 3.24998 9.35ZM13.45 15.3C13.6908 15.3 13.8928 15.2184 14.056 15.0552C14.2192 14.892 14.3005 14.6903 14.3 14.45C14.3 14.2092 14.2184 14.0072 14.0552 13.844C13.892 13.6808 13.6902 13.5994 13.45 13.6C13.2091 13.6 13.0071 13.6816 12.8439 13.8448C12.6807 14.008 12.5994 14.2097 12.6 14.45C12.6 14.6908 12.6816 14.8928 12.8448 15.0561C13.008 15.2192 13.2097 15.3006 13.45 15.3Z" fill="white" fill-opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="box-border px-4 py-2 h-min flex border-b border-neutral-700">
+            <div class="min-w-fit h-12 overflow-hidden mr-4 rounded-full">
+                <img src="../images/user-pic-1.png" alt="User Picture" class="w-12 h-12 object-cover">
+            </div>
+            <div class="w-full">
+                    <div class="mb-1">
+                        <div class="text-neutral-50 mb-1">
+                            <span class="text-16 font-medium">Name</span>
+                            <span class="text-neutral-500">@johndoe</span>
+                            <span class="text-neutral-500">•</span>
+                            <span class="text-neutral-500">10h</span>
+                        </div>
+                        <p class="text-neutral-50 text-15 font-regular">Writing gets easier after the first sentence.
+                        </p>
+                    </div>
+
+                    <div class="text-neutral-500 flex items-center justify-between py-3">
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path d="M12.1092 9.61961L8.03202 13.1428V11.339V10.589H7.28202H5.56048C2.90372 10.589 0.75 8.43526 0.75 5.7785C0.75 3.12174 2.90373 0.968018 5.56048 0.968018H8.88896C11.609 0.968018 13.814 3.17305 13.814 5.89311C13.814 7.32395 13.1918 8.68407 12.1092 9.61961Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5"/>
+                            </svg>
+                            <span class="text-14 font-regular">11</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <path d="M3.15304 1.46069L0.996155 3.6176M3.15304 1.46069L5.30994 3.6176M3.15304 1.46069L3.15304 10.6959C3.15304 12.2663 4.42611 13.5394 5.99652 13.5394L10.9179 13.5394" stroke="white" stroke-opacity="0.4" stroke-width="1.42174" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.6828 13.5396L18.8397 11.3826M16.6828 13.5396L14.5259 11.3826M16.6828 13.5396L16.6828 4.30436C16.6828 2.73395 15.4097 1.46088 13.8393 1.46088L8.91792 1.46088" stroke="white" stroke-opacity="0.4" stroke-width="1.42174" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-14 font-regular">270</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path d="M8.55375 3.86099L7.92905 3.08432C6.20461 0.940397 3.0458 1.29366 1.75996 3.77424C1.13951 4.97117 1.10862 7.40028 1.67758 8.62702C3.59347 12.7578 7.18184 14.7113 7.86976 15.0559C7.94687 15.0945 8.01695 15.1432 8.0896 15.1897C8.41151 15.3957 8.8226 15.3698 9.1221 15.112C9.17845 15.0635 13.3047 13.2092 15.4299 8.62702C15.9989 7.40029 15.968 4.97117 15.3475 3.77424C14.0617 1.29366 10.3743 0.69782 8.55375 3.86099Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5"/>
+                            </svg>
+                            <span class="text-14 font-regular">1,869</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.267883" y="5.71436" width="1.71429" height="9.14287" fill="white" fill-opacity="0.4"/>
+                                <rect x="3.69659" width="1.71429" height="14.8572" fill="white" fill-opacity="0.4"/>
+                                <rect x="7.12512" y="8" width="1.71429" height="6.85715" fill="white" fill-opacity="0.4"/>
+                                <rect x="10.5537" y="3.42847" width="1.71429" height="11.4286" fill="white" fill-opacity="0.4"/>
+                            </svg>
+                            <span class="text-14 font-regular">99.6k</span>
+                        </div>
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path d="M13.45 17C12.7416 17 12.1396 16.7521 11.6437 16.2563C11.1479 15.7604 10.9 15.1583 10.9 14.45C10.9 14.3508 10.9071 14.248 10.9212 14.1414C10.9354 14.0349 10.9566 13.9394 10.985 13.855L4.99248 10.37C4.75165 10.5825 4.48248 10.7491 4.18498 10.8698C3.88748 10.9905 3.57582 11.0506 3.24998 11.05C2.54165 11.05 1.93957 10.8021 1.44373 10.3063C0.947898 9.81042 0.699982 9.20833 0.699982 8.5C0.699982 7.79167 0.947898 7.18958 1.44373 6.69375C1.93957 6.19792 2.54165 5.95 3.24998 5.95C3.57582 5.95 3.88748 6.01035 4.18498 6.13105C4.48248 6.25175 4.75165 6.41807 4.99248 6.63L10.985 3.145C10.9566 3.06 10.9354 2.96452 10.9212 2.85855C10.9071 2.75258 10.9 2.64973 10.9 2.55C10.9 1.84167 11.1479 1.23958 11.6437 0.74375C12.1396 0.247917 12.7416 0 13.45 0C14.1583 0 14.7604 0.247917 15.2562 0.74375C15.7521 1.23958 16 1.84167 16 2.55C16 3.25833 15.7521 3.86042 15.2562 4.35625C14.7604 4.85208 14.1583 5.1 13.45 5.1C13.1241 5.1 12.8125 5.03993 12.515 4.9198C12.2175 4.79967 11.9483 4.63307 11.7075 4.42L5.71498 7.905C5.74331 7.99 5.76457 8.08577 5.77873 8.1923C5.7929 8.29883 5.79998 8.4014 5.79998 8.5C5.79998 8.59917 5.7929 8.70202 5.77873 8.80855C5.76457 8.91508 5.74331 9.01057 5.71498 9.095L11.7075 12.58C11.9483 12.3675 12.2175 12.2012 12.515 12.081C12.8125 11.9609 13.1241 11.9006 13.45 11.9C14.1583 11.9 14.7604 12.1479 15.2562 12.6438C15.7521 13.1396 16 13.7417 16 14.45C16 15.1583 15.7521 15.7604 15.2562 16.2563C14.7604 16.7521 14.1583 17 13.45 17ZM13.45 3.4C13.6908 3.4 13.8928 3.3184 14.056 3.1552C14.2192 2.992 14.3005 2.79027 14.3 2.55C14.3 2.30917 14.2184 2.10715 14.0552 1.94395C13.892 1.78075 13.6902 1.69943 13.45 1.7C13.2091 1.7 13.0071 1.7816 12.8439 1.9448C12.6807 2.108 12.5994 2.30973 12.6 2.55C12.6 2.79083 12.6816 2.99285 12.8448 3.15605C13.008 3.31925 13.2097 3.40057 13.45 3.4ZM3.24998 9.35C3.49082 9.35 3.69283 9.2684 3.85603 9.1052C4.01923 8.942 4.10055 8.74027 4.09998 8.5C4.09998 8.25917 4.01838 8.05715 3.85518 7.89395C3.69198 7.73075 3.49025 7.64943 3.24998 7.65C3.00915 7.65 2.80713 7.7316 2.64393 7.8948C2.48073 8.058 2.39942 8.25973 2.39998 8.5C2.39998 8.74083 2.48158 8.94285 2.64478 9.10605C2.80798 9.26925 3.00972 9.35057 3.24998 9.35ZM13.45 15.3C13.6908 15.3 13.8928 15.2184 14.056 15.0552C14.2192 14.892 14.3005 14.6903 14.3 14.45C14.3 14.2092 14.2184 14.0072 14.0552 13.844C13.892 13.6808 13.6902 13.5994 13.45 13.6C13.2091 13.6 13.0071 13.6816 12.8439 13.8448C12.6807 14.008 12.5994 14.2097 12.6 14.45C12.6 14.6908 12.6816 14.8928 12.8448 15.0561C13.008 15.2192 13.2097 15.3006 13.45 15.3Z" fill="white" fill-opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="box-border px-4 py-2 h-min flex border-b border-neutral-700">
+            <div class="min-w-fit h-12 overflow-hidden mr-4 rounded-full">
+                <img src="../images/user-pic-1.png" alt="User Picture" class="w-12 h-12 object-cover">
+            </div>
+            <div class="w-full">
+                    <div class="mb-1">
+                        <div class="text-neutral-50 mb-1">
+                            <span class="text-16 font-medium">Name</span>
+                            <span class="text-neutral-500">@johndoe</span>
+                            <span class="text-neutral-500">•</span>
+                            <span class="text-neutral-500">10h</span>
+                        </div>
+                        <p class="text-neutral-50 text-15 font-regular">I'm genuinely astonished my course still does $16,000+ per week.<br><br>
+
+                            I barely tweet. I run zero ads. Basically putting out no content whatsoever.<br><br>
+                            
+                            But it's been this way for 24 weeks straight.<br><br>
+                            
+                            Rattles my brain how this is happening.
+                        </p>
+                    </div>
+
+                    <div class="text-neutral-500 flex items-center justify-between py-3">
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path d="M12.1092 9.61961L8.03202 13.1428V11.339V10.589H7.28202H5.56048C2.90372 10.589 0.75 8.43526 0.75 5.7785C0.75 3.12174 2.90373 0.968018 5.56048 0.968018H8.88896C11.609 0.968018 13.814 3.17305 13.814 5.89311C13.814 7.32395 13.1918 8.68407 12.1092 9.61961Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5"/>
+                            </svg>
+                            <span class="text-14 font-regular">11</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <path d="M3.15304 1.46069L0.996155 3.6176M3.15304 1.46069L5.30994 3.6176M3.15304 1.46069L3.15304 10.6959C3.15304 12.2663 4.42611 13.5394 5.99652 13.5394L10.9179 13.5394" stroke="white" stroke-opacity="0.4" stroke-width="1.42174" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.6828 13.5396L18.8397 11.3826M16.6828 13.5396L14.5259 11.3826M16.6828 13.5396L16.6828 4.30436C16.6828 2.73395 15.4097 1.46088 13.8393 1.46088L8.91792 1.46088" stroke="white" stroke-opacity="0.4" stroke-width="1.42174" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-14 font-regular">270</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path d="M8.55375 3.86099L7.92905 3.08432C6.20461 0.940397 3.0458 1.29366 1.75996 3.77424C1.13951 4.97117 1.10862 7.40028 1.67758 8.62702C3.59347 12.7578 7.18184 14.7113 7.86976 15.0559C7.94687 15.0945 8.01695 15.1432 8.0896 15.1897C8.41151 15.3957 8.8226 15.3698 9.1221 15.112C9.17845 15.0635 13.3047 13.2092 15.4299 8.62702C15.9989 7.40029 15.968 4.97117 15.3475 3.77424C14.0617 1.29366 10.3743 0.69782 8.55375 3.86099Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5"/>
+                            </svg>
+                            <span class="text-14 font-regular">1,869</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.267883" y="5.71436" width="1.71429" height="9.14287" fill="white" fill-opacity="0.4"/>
+                                <rect x="3.69659" width="1.71429" height="14.8572" fill="white" fill-opacity="0.4"/>
+                                <rect x="7.12512" y="8" width="1.71429" height="6.85715" fill="white" fill-opacity="0.4"/>
+                                <rect x="10.5537" y="3.42847" width="1.71429" height="11.4286" fill="white" fill-opacity="0.4"/>
+                            </svg>
+                            <span class="text-14 font-regular">99.6k</span>
+                        </div>
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path d="M13.45 17C12.7416 17 12.1396 16.7521 11.6437 16.2563C11.1479 15.7604 10.9 15.1583 10.9 14.45C10.9 14.3508 10.9071 14.248 10.9212 14.1414C10.9354 14.0349 10.9566 13.9394 10.985 13.855L4.99248 10.37C4.75165 10.5825 4.48248 10.7491 4.18498 10.8698C3.88748 10.9905 3.57582 11.0506 3.24998 11.05C2.54165 11.05 1.93957 10.8021 1.44373 10.3063C0.947898 9.81042 0.699982 9.20833 0.699982 8.5C0.699982 7.79167 0.947898 7.18958 1.44373 6.69375C1.93957 6.19792 2.54165 5.95 3.24998 5.95C3.57582 5.95 3.88748 6.01035 4.18498 6.13105C4.48248 6.25175 4.75165 6.41807 4.99248 6.63L10.985 3.145C10.9566 3.06 10.9354 2.96452 10.9212 2.85855C10.9071 2.75258 10.9 2.64973 10.9 2.55C10.9 1.84167 11.1479 1.23958 11.6437 0.74375C12.1396 0.247917 12.7416 0 13.45 0C14.1583 0 14.7604 0.247917 15.2562 0.74375C15.7521 1.23958 16 1.84167 16 2.55C16 3.25833 15.7521 3.86042 15.2562 4.35625C14.7604 4.85208 14.1583 5.1 13.45 5.1C13.1241 5.1 12.8125 5.03993 12.515 4.9198C12.2175 4.79967 11.9483 4.63307 11.7075 4.42L5.71498 7.905C5.74331 7.99 5.76457 8.08577 5.77873 8.1923C5.7929 8.29883 5.79998 8.4014 5.79998 8.5C5.79998 8.59917 5.7929 8.70202 5.77873 8.80855C5.76457 8.91508 5.74331 9.01057 5.71498 9.095L11.7075 12.58C11.9483 12.3675 12.2175 12.2012 12.515 12.081C12.8125 11.9609 13.1241 11.9006 13.45 11.9C14.1583 11.9 14.7604 12.1479 15.2562 12.6438C15.7521 13.1396 16 13.7417 16 14.45C16 15.1583 15.7521 15.7604 15.2562 16.2563C14.7604 16.7521 14.1583 17 13.45 17ZM13.45 3.4C13.6908 3.4 13.8928 3.3184 14.056 3.1552C14.2192 2.992 14.3005 2.79027 14.3 2.55C14.3 2.30917 14.2184 2.10715 14.0552 1.94395C13.892 1.78075 13.6902 1.69943 13.45 1.7C13.2091 1.7 13.0071 1.7816 12.8439 1.9448C12.6807 2.108 12.5994 2.30973 12.6 2.55C12.6 2.79083 12.6816 2.99285 12.8448 3.15605C13.008 3.31925 13.2097 3.40057 13.45 3.4ZM3.24998 9.35C3.49082 9.35 3.69283 9.2684 3.85603 9.1052C4.01923 8.942 4.10055 8.74027 4.09998 8.5C4.09998 8.25917 4.01838 8.05715 3.85518 7.89395C3.69198 7.73075 3.49025 7.64943 3.24998 7.65C3.00915 7.65 2.80713 7.7316 2.64393 7.8948C2.48073 8.058 2.39942 8.25973 2.39998 8.5C2.39998 8.74083 2.48158 8.94285 2.64478 9.10605C2.80798 9.26925 3.00972 9.35057 3.24998 9.35ZM13.45 15.3C13.6908 15.3 13.8928 15.2184 14.056 15.0552C14.2192 14.892 14.3005 14.6903 14.3 14.45C14.3 14.2092 14.2184 14.0072 14.0552 13.844C13.892 13.6808 13.6902 13.5994 13.45 13.6C13.2091 13.6 13.0071 13.6816 12.8439 13.8448C12.6807 14.008 12.5994 14.2097 12.6 14.45C12.6 14.6908 12.6816 14.8928 12.8448 15.0561C13.008 15.2192 13.2097 15.3006 13.45 15.3Z" fill="white" fill-opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="box-border px-4 py-2 h-min flex border-b border-neutral-700">
+            <div class="min-w-fit h-12 overflow-hidden mr-4 rounded-full">
+                <img src="../images/user-pic-1.png" alt="User Picture" class="w-12 h-12 object-cover">
+            </div>
+            <div class="w-full">
+                    <div class="mb-1">
+                        <div class="text-neutral-50 mb-1">
+                            <span class="text-16 font-medium">Name</span>
+                            <span class="text-neutral-500">@johndoe</span>
+                            <span class="text-neutral-500">•</span>
+                            <span class="text-neutral-500">10h</span>
+                        </div>
+                        <p class="text-neutral-50 text-15 font-regular">I'm genuinely astonished my course still does $16,000+ per week.<br><br>
+
+                            I barely tweet. I run zero ads. Basically putting out no content whatsoever.<br><br>
+                            
+                            But it's been this way for 24 weeks straight.<br><br>
+                            
+                            Rattles my brain how this is happening.
+                        </p>
+                    </div>
+
+                    <div class="text-neutral-500 flex items-center justify-between py-3">
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path d="M12.1092 9.61961L8.03202 13.1428V11.339V10.589H7.28202H5.56048C2.90372 10.589 0.75 8.43526 0.75 5.7785C0.75 3.12174 2.90373 0.968018 5.56048 0.968018H8.88896C11.609 0.968018 13.814 3.17305 13.814 5.89311C13.814 7.32395 13.1918 8.68407 12.1092 9.61961Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5"/>
+                            </svg>
+                            <span class="text-14 font-regular">11</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <path d="M3.15304 1.46069L0.996155 3.6176M3.15304 1.46069L5.30994 3.6176M3.15304 1.46069L3.15304 10.6959C3.15304 12.2663 4.42611 13.5394 5.99652 13.5394L10.9179 13.5394" stroke="white" stroke-opacity="0.4" stroke-width="1.42174" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.6828 13.5396L18.8397 11.3826M16.6828 13.5396L14.5259 11.3826M16.6828 13.5396L16.6828 4.30436C16.6828 2.73395 15.4097 1.46088 13.8393 1.46088L8.91792 1.46088" stroke="white" stroke-opacity="0.4" stroke-width="1.42174" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-14 font-regular">270</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path d="M8.55375 3.86099L7.92905 3.08432C6.20461 0.940397 3.0458 1.29366 1.75996 3.77424C1.13951 4.97117 1.10862 7.40028 1.67758 8.62702C3.59347 12.7578 7.18184 14.7113 7.86976 15.0559C7.94687 15.0945 8.01695 15.1432 8.0896 15.1897C8.41151 15.3957 8.8226 15.3698 9.1221 15.112C9.17845 15.0635 13.3047 13.2092 15.4299 8.62702C15.9989 7.40029 15.968 4.97117 15.3475 3.77424C14.0617 1.29366 10.3743 0.69782 8.55375 3.86099Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5"/>
+                            </svg>
+                            <span class="text-14 font-regular">1,869</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.267883" y="5.71436" width="1.71429" height="9.14287" fill="white" fill-opacity="0.4"/>
+                                <rect x="3.69659" width="1.71429" height="14.8572" fill="white" fill-opacity="0.4"/>
+                                <rect x="7.12512" y="8" width="1.71429" height="6.85715" fill="white" fill-opacity="0.4"/>
+                                <rect x="10.5537" y="3.42847" width="1.71429" height="11.4286" fill="white" fill-opacity="0.4"/>
+                            </svg>
+                            <span class="text-14 font-regular">99.6k</span>
+                        </div>
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path d="M13.45 17C12.7416 17 12.1396 16.7521 11.6437 16.2563C11.1479 15.7604 10.9 15.1583 10.9 14.45C10.9 14.3508 10.9071 14.248 10.9212 14.1414C10.9354 14.0349 10.9566 13.9394 10.985 13.855L4.99248 10.37C4.75165 10.5825 4.48248 10.7491 4.18498 10.8698C3.88748 10.9905 3.57582 11.0506 3.24998 11.05C2.54165 11.05 1.93957 10.8021 1.44373 10.3063C0.947898 9.81042 0.699982 9.20833 0.699982 8.5C0.699982 7.79167 0.947898 7.18958 1.44373 6.69375C1.93957 6.19792 2.54165 5.95 3.24998 5.95C3.57582 5.95 3.88748 6.01035 4.18498 6.13105C4.48248 6.25175 4.75165 6.41807 4.99248 6.63L10.985 3.145C10.9566 3.06 10.9354 2.96452 10.9212 2.85855C10.9071 2.75258 10.9 2.64973 10.9 2.55C10.9 1.84167 11.1479 1.23958 11.6437 0.74375C12.1396 0.247917 12.7416 0 13.45 0C14.1583 0 14.7604 0.247917 15.2562 0.74375C15.7521 1.23958 16 1.84167 16 2.55C16 3.25833 15.7521 3.86042 15.2562 4.35625C14.7604 4.85208 14.1583 5.1 13.45 5.1C13.1241 5.1 12.8125 5.03993 12.515 4.9198C12.2175 4.79967 11.9483 4.63307 11.7075 4.42L5.71498 7.905C5.74331 7.99 5.76457 8.08577 5.77873 8.1923C5.7929 8.29883 5.79998 8.4014 5.79998 8.5C5.79998 8.59917 5.7929 8.70202 5.77873 8.80855C5.76457 8.91508 5.74331 9.01057 5.71498 9.095L11.7075 12.58C11.9483 12.3675 12.2175 12.2012 12.515 12.081C12.8125 11.9609 13.1241 11.9006 13.45 11.9C14.1583 11.9 14.7604 12.1479 15.2562 12.6438C15.7521 13.1396 16 13.7417 16 14.45C16 15.1583 15.7521 15.7604 15.2562 16.2563C14.7604 16.7521 14.1583 17 13.45 17ZM13.45 3.4C13.6908 3.4 13.8928 3.3184 14.056 3.1552C14.2192 2.992 14.3005 2.79027 14.3 2.55C14.3 2.30917 14.2184 2.10715 14.0552 1.94395C13.892 1.78075 13.6902 1.69943 13.45 1.7C13.2091 1.7 13.0071 1.7816 12.8439 1.9448C12.6807 2.108 12.5994 2.30973 12.6 2.55C12.6 2.79083 12.6816 2.99285 12.8448 3.15605C13.008 3.31925 13.2097 3.40057 13.45 3.4ZM3.24998 9.35C3.49082 9.35 3.69283 9.2684 3.85603 9.1052C4.01923 8.942 4.10055 8.74027 4.09998 8.5C4.09998 8.25917 4.01838 8.05715 3.85518 7.89395C3.69198 7.73075 3.49025 7.64943 3.24998 7.65C3.00915 7.65 2.80713 7.7316 2.64393 7.8948C2.48073 8.058 2.39942 8.25973 2.39998 8.5C2.39998 8.74083 2.48158 8.94285 2.64478 9.10605C2.80798 9.26925 3.00972 9.35057 3.24998 9.35ZM13.45 15.3C13.6908 15.3 13.8928 15.2184 14.056 15.0552C14.2192 14.892 14.3005 14.6903 14.3 14.45C14.3 14.2092 14.2184 14.0072 14.0552 13.844C13.892 13.6808 13.6902 13.5994 13.45 13.6C13.2091 13.6 13.0071 13.6816 12.8439 13.8448C12.6807 14.008 12.5994 14.2097 12.6 14.45C12.6 14.6908 12.6816 14.8928 12.8448 15.0561C13.008 15.2192 13.2097 15.3006 13.45 15.3Z" fill="white" fill-opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <a href="../tweet/index.html">
+    <button class="bg-twitter-blue hover:bg-twitter-blue-hover rounded-full p-4 fixed bottom-20 right-4 z-10">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M25.3333 17.3334H17.3333V25.3334H14.6667V17.3334H6.66666V14.6667H14.6667V6.66675H17.3333V14.6667H25.3333V17.3334Z" fill="#F9F9F9"/>
+        </svg>
+    </button>
+    </a>
+
+    <footer class="fixed bottom-0 w-full px-6 py-[18px] bg-neutral-1000 flex items-center justify-center gap-10 border-t border-neutral-800">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z" fill="#F9F9F9"/>
+        </svg>
+        <a href="../profile/index.html">
+        <img src="../images/profile.svg" alt="">
+        </a>
+    </footer>
+</body>
+
+</html>
