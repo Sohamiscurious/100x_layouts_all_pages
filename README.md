@@ -9,9 +9,18 @@ Using the Tailwind CSS components from your previous task, create the foundation
 ## Assignment Overview
 
 - **Login Screens:** Design a welcoming login and sign-up page layout.
+- https://100x-engineers.github.io/layouts-assignment-Sohamiscurious/src/login/index.html
+- https://100x-engineers.github.io/layouts-assignment-Sohamiscurious/src/login/create-account-step-1.html
+- https://100x-engineers.github.io/layouts-assignment-Sohamiscurious/src/login/create-account-step-2.html
+- https://100x-engineers.github.io/layouts-assignment-Sohamiscurious/src/login/create-account-step-3.html
+- https://100x-engineers.github.io/layouts-assignment-Sohamiscurious/src/login/create-account-step-4.html
 - **Home Feed:** Craft the primary interface layout, showcasing tweet structures and interaction icons.
+- https://100x-engineers.github.io/layouts-assignment-Sohamiscurious/src/home/index.html
 - **Compose Tweet:** Layout a space for drafting tweets, indicating a 280 character limit and potential error states.
+- https://100x-engineers.github.io/layouts-assignment-Sohamiscurious/src/tweet/index.html
 - **User Profile:** Create a comprehensive user profile layout, featuring placeholders for user details and tweets.
+- https://100x-engineers.github.io/layouts-assignment-Sohamiscurious/src/profile/index.html
+- https://100x-engineers.github.io/layouts-assignment-Sohamiscurious/src/profile/edit-profile.html
 
 ## Resources
 
